@@ -65,7 +65,7 @@ style {
 }
 
 .menu-nav {
-    display: flex;
+    display: flex; 
     flex-direction: row;
     align-items: center;
 }
@@ -115,7 +115,8 @@ style {
 }
 
 .page-ul-nav {
-    display: flex;
+    /* display: flex; */
+    display: none;
     gap: 40px;
     flex-direction: column;
     background: #fff;
@@ -166,9 +167,18 @@ style {
 }
 
 .page-add {
-    display: flex;
+    /* display: flex; */
+    display: none;
     flex-direction: row;
     gap: 40px;
+}
+.icon-btn{
+    display: block;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+}
+.iconsh{
+    fill: #2F2F37;
 }
 
 .service {
@@ -245,7 +255,7 @@ style {
     /* padding-top: 120px;
     padding-bottom: 120px; */
     padding-top: 96px;
-    padding-bottom: 20px;
+    padding-bottom: 96px;
 }
 .visually-hidden{
     position: absolute;
@@ -264,7 +274,8 @@ style {
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
-    gap: 24px;
+    /* gap: 24px; */
+    gap: 72px;
     padding-left: 0;
     margin: 0;
 }
@@ -287,7 +298,6 @@ style {
 }  */
 .description-item {
     justify-content: flex-start;
-    margin-bottom: 76px;
     /* width: calc((100% - 72px) / 4); */
 }
 
@@ -493,7 +503,12 @@ style {
 }
 .come .container{
     display: flex;
+    flex-wrap: wrap;
     align-items: first baseline;
+}
+.come-lp{
+    text-align: center;
+    
 }
 .come-text {
     font-weight: 400;
@@ -501,13 +516,19 @@ style {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
-    width: 264px;
+    /* width: 264px; */
+    width: 288px;
+    height: 72px;
+    text-align: left;
 }
 
 .come .plan-name{
     display: inline-block;
     margin-bottom: 16px;
+    width: 100%;
+    align-items: center;
 }
+
 .come-title{
     font-weight: 500;
     font-size: 16px;
@@ -515,15 +536,22 @@ style {
     letter-spacing: 0.02em;
     color: #FFFFFF;
     margin-bottom: 16px;
+    margin-top: 72px;
+    width: 100%;
+    text-align: center;
+}
+.social-com{
+    padding:0 40px;
 }
 .somere-come{
     display: flex;
     gap: 16px;
+    
 }
 .somere-item-come{
     width: 40px;
     height: 40px;
-
+    
 }
 .somere-item-come a:hover {
     background-color: #31d0aa;
@@ -555,16 +583,21 @@ style {
 }
 .form-footer{
     margin-left: auto;
+    margin-top: 72px;
+    text-align: center;
+    
 }
 .form {
     display: flex;
+    flex-wrap: wrap;
     gap: 24px;
 }
 
 .form-label {}
 
 .form-input {
-    width: 264px;
+    /* width: 264px; */
+    width: 288px;
     height: 40px;
     border: 1px solid #FFFFFF;
     background-color: transparent;
@@ -572,7 +605,9 @@ style {
     letter-spacing: 0.04em;
     line-height: 2;
     padding-left: 16px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    opacity: 0.3;
     border-radius: 4px;
     color: #FFFFFF;
 }
@@ -596,6 +631,7 @@ style {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    margin-left: 61px;
 }
 
 .iconsb {
@@ -794,12 +830,17 @@ style {
     .container{
         width: 768px;
     }
+    .icon-btn{
+        display: none;
+    }
     .service-title{
         font-size: 56px;
         line-height: 1.07;
         margin-bottom: 36px;
     }
-    
+    .description-list{
+        gap: 24px;
+    }
     .description-item{
     width: calc((100% - 24px) / 2);
     margin-bottom: 0;
@@ -831,6 +872,17 @@ style {
         url('../images/people-office-tab2x.jpg');
             }
         }
+    .form-input{
+        width: 264px;
+    }
+    .come-lp{
+        margin-right: 0;
+        padding-left: 106px;
+    }
+    .form-footer{
+        text-align: left;
+        margin-left: 108px;
+    }
 }
 @media screen and (min-width: 1158px) {
     .container {
