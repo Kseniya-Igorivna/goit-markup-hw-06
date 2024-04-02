@@ -180,7 +180,93 @@ style {
 .iconsh{
     fill: #2F2F37;
 }
+.mob-menu {
+    position: fixed;
+    top: 0;
+    background-color: #FFFFFF;
+    width: 100vw;
+    height: 100vh;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}
 
+.menu-close-btn {
+    display: block;
+    margin-left: auto;
+    margin-bottom: 24px;
+    border-radius: 100%;
+    fill: #e7e9fc;
+    stroke-width: 1px;
+    cursor: pointer;
+}
+
+.iconsx {
+    stroke: #2e2f42;
+}
+
+.page-ul-mob-menu {
+    display: block;
+    gap: 40px;
+}
+.mob-menu-item:not(:last-child){
+    margin-bottom: 40px;
+}
+.mob-menu-page-list {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    margin-bottom: 50px;
+}
+
+.current {}
+
+.mob-menu-style {}
+
+.mob-menu-page-add {
+    display: block;
+    gap: 40px;
+}
+
+.mob-menu-page-mn {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #434455;
+    
+}
+
+.mob-menu-somere-come {
+    display: flex;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.mob-menu-somere-item-come {
+    width: 40px;
+    height: 40px;
+}
+
+.mob-menu-somere-icon-come {
+    width: 100%;
+    height: 100%;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconm {
+    fill: #FFFFFF;
+}
 .service {
     background: #2e2f42;
     padding-top: 188px;
@@ -502,9 +588,9 @@ style {
     padding: 100px 0;
 }
 .come .container{
-    display: flex;
+    display: flex; 
     flex-wrap: wrap;
-    align-items: first baseline;
+    /* align-items: first baseline; */
 }
 .come-lp{
     text-align: center;
@@ -551,7 +637,6 @@ style {
 .somere-item-come{
     width: 40px;
     height: 40px;
-    
 }
 .somere-item-come a:hover {
     background-color: #31d0aa;
@@ -588,7 +673,7 @@ style {
     
 }
 .form {
-    display: flex;
+    /* display: flex; */
     flex-wrap: wrap;
     gap: 24px;
 }
@@ -610,6 +695,7 @@ style {
     opacity: 0.3;
     border-radius: 4px;
     color: #FFFFFF;
+    margin-bottom: 16px;
 }
 ::placeholder {
     color: #ffffff;
@@ -618,7 +704,7 @@ style {
 .subscribe-btn {
     min-width: 165px;
     height: 40px;
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     align-items: center;
     font-family: "Roboto", sans-serif;
@@ -631,7 +717,7 @@ style {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    margin-left: 61px;
+    
 }
 
 .iconsb {
@@ -883,6 +969,12 @@ style {
         text-align: left;
         margin-left: 108px;
     }
+    .come-title{
+        margin-top: 0;
+    }
+    .subscribe-btn{
+        margin-left: 24px;
+    }
 }
 @media screen and (min-width: 1158px) {
     .container {
@@ -950,5 +1042,23 @@ style {
     }
     .portfolio-item{
         width: calc((100% - 48px) / 3);
+    }
+    .come .container{
+    align-items: first baseline;
+    flex-wrap: nowrap;
+    margin-left: 0;
+    }
+    .form-input{
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
+    .form{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .come-lp{
+    padding-left: 156px;
+    }
+    .form-footer{
+        margin-left: 80px;
     }
 }
