@@ -205,9 +205,12 @@ style {
     margin-left: auto;
     margin-bottom: 24px;
     border-radius: 100%;
-    fill: #e7e9fc;
-    stroke-width: 1px;
+    fill: #E7E9FC;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #E7E9FC;
     cursor: pointer;
+    background-color: #FFFFFF;
 }
 
 .iconsx {
@@ -619,16 +622,16 @@ style {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
-    /* width: 264px; */
-    width: 288px;
+    width: 264px;
     height: 72px;
     text-align: left;
 }
 
 .come .plan-name{
-    display: inline-block;
+    display: block;
     margin-bottom: 16px;
     align-items: center;
+    padding: 0;
 }
 
 .come-title{
@@ -720,7 +723,7 @@ style {
 .subscribe-btn {
     min-width: 165px;
     height: 40px;
-    /* display: flex; */
+    display: flex;
     justify-content: center;
     align-items: center;
     font-family: "Roboto", sans-serif;
@@ -954,6 +957,7 @@ style {
         line-height: 1.07;
         margin-bottom: 36px;
         text-align: center;
+        padding: 0;
     }
     .description{
         padding-top: 109px;
@@ -1014,9 +1018,6 @@ style {
         text-align: left;
         margin-left: 108px;
     }
-    .come .plan-name{
-        margin-bottom: 0;
-    }
     .come-title{
         margin-top: 0;
         text-align: left;
@@ -1024,10 +1025,7 @@ style {
     }
     .social-com{
         padding: 0 0;
-        margin: 16px 24px;
-    }
-    .subscribe-btn{
-        margin-left: 24px;
+        margin: 0;
     }
     .modal{
         width: 408px;
@@ -1035,11 +1033,14 @@ style {
     }
     .form-footer{
         margin-top: 0;
+        margin-bottom: 0;
     }
 }
 @media screen and (min-width: 1158px) {
     .container {
         width: 1158px;
+        padding-left: 15px;
+        padding-right: 15px;
         }
     section{
         padding-top: 120px;
@@ -1127,6 +1128,7 @@ style {
     min-width: 1158px;
     }
     .form-input{
+        margin-bottom: 0;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     }
     .form{
@@ -1134,7 +1136,9 @@ style {
         flex-wrap: nowrap;
     }
     .come-lp{
-    padding-left: 156px;
+    padding-left: 0;
+    margin-right: 120px;
+    margin-bottom: 0;
     
     }
     .form-footer{
