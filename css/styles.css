@@ -967,11 +967,14 @@ style {
         
     }
     .description-item{
+    
     width: calc((100% - 24px) / 2);
     margin-bottom: 0;
     justify-content: flex-start;
     }
-    
+    .description-suptitle{
+        text-align: left;
+    }
     .hero-item{
         margin-bottom: 0;
     }
