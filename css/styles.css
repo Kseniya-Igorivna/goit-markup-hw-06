@@ -1010,9 +1010,13 @@ style {
         width: 264px;
     }
     .come-lp{
-        margin-right: 0;
+        margin-right: 24px;
         padding-left: 106px;
         text-align: left;
+    }
+    .form{
+        display: flex;
+        flex-wrap: nowrap;
     }
     .form-footer{
         text-align: left;
