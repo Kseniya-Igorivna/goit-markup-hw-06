@@ -958,11 +958,11 @@ style {
     .description{
         padding-top: 109px;
         padding-bottom: 95px;
-        width: 736px;
+        
         
     }
     .description-list{
-        justify-content: space-between;
+        
         gap: 72px 24px;
         
     }
@@ -1072,6 +1072,10 @@ style {
         }
     .description{
         padding: 120px 0;
+        align-items: center;
+    }
+    .description-list{
+        gap: 24px;
     }
     .description-item {
         height: 224px;
