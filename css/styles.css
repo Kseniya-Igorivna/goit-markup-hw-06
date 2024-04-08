@@ -201,13 +201,16 @@ style {
 }
 
 .menu-close-btn {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-left: auto;
     margin-bottom: 24px;
     border-radius: 100%;
     fill: #E7E9FC;
     width: 24px;
     height: 24px;
+    outline: none;
     border: 1px solid #E7E9FC;
     cursor: pointer;
     background-color: #FFFFFF;
@@ -686,7 +689,7 @@ style {
     color: #FFFFFF;
 }
 .form-footer{
-    margin-left: auto;
+    /* margin-left: auto; */
     margin-top: 72px;
     text-align: center;
     
@@ -1020,12 +1023,16 @@ style {
     }
     .form-footer{
         text-align: left;
-        margin-left: 108px;
+        padding-left: 108px;
+        /* margin-left: 108px; */
     }
     .come-title{
         margin-top: 0;
         text-align: left;
         
+    }
+    .come .container{
+        /* padding-left: 108px; */
     }
     .subscribe-btn{
         margin: 0;
@@ -1081,6 +1088,12 @@ style {
         url('../images/people-office-dep2x.jpg');
             }
         }
+    .service-title{
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+        margin-bottom: 48px;
+    }
     .description{
         padding: 120px 0;
         align-items: center;
@@ -1150,5 +1163,6 @@ style {
     }
     .form-footer{
         margin-left: 80px;
+        padding-left: 0;
     }
 }
